@@ -1,11 +1,12 @@
-### Description
+# Description
 ## Given a string s, find the length of the longest substring without repeating characters.
-
-## Coding Pattern: Sliding Window
+---
+## Coding Pattern(s): Sliding Window
 ## Solution Write Up:
-# Using the sliding window coding pattern update window size upon finding a character that already exists in the current substring.
-
+### Using the sliding window coding pattern update window size upon finding a character that already exists in the current substring.
+---
 ## Solution:
+### Time Complexity: O(n)
 ```python
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
