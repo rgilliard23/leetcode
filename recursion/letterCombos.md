@@ -1,7 +1,7 @@
 # Description
-## You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]). Find two lines that together with the x-axis form a container, such that the container contains the most water. Return the maximum amount of water a container can store.
+## Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order. A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 ---
-## Coding Pattern(s): Sliding Window
+## Coding Pattern(s): Recursion
 ## Solution Write Up:
 ### The idea is to close inwards using the sliding window pattern. We only try to see if the area of the container is greater when one of the heights is greater than the max height encountered so far. We increment which ever height at the pointers is left. i.e left is less than right than move left forward else move right backward.
 ---
