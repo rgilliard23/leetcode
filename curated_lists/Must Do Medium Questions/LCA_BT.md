@@ -6,7 +6,7 @@
 ### The idea is to check if left or contains node. the left and right trees contain either node then return current node else return the tree that contains both nodes
 ---
 ## Solution:
-### Time Complexity: O(Nlogn) due to insert.
+### Time Complexity: O(N)
 
 ```python
 class Solution:
