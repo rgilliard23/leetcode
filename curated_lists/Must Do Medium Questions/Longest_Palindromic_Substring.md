@@ -3,9 +3,10 @@
 ---
 ## Coding Pattern(s): DP or Expand Around Center
 ## Solution Write Up:
-### Using the sliding window coding pattern update window size upon finding a character that already exists in the current substring.
+### The idea is to treat each character as the center of the palindrome. Contiouslty expand and compare the characters on either side of the center. Keep Track of maximum palindrome length.
 ---
 ## Solution DP:
+### Time Complexity: O(N<sup>2</sup>)
 
 ```python
 class Solution:
