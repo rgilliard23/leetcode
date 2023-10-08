@@ -15,7 +15,7 @@
 # Dynamic Programming Solution
 # Time: O(n * m), Space: O(n * m)
 # Where n is the number of items & m is the capacity.
-
+# Capacity horizontal, Items vertical
 def dp(profit: list, weight: list, capacity: int):
     N, M = len(profit), capacity
     dp = [[0] * (M + 1) for _ in range(N)]

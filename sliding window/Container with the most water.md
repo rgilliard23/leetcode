@@ -1,12 +1,12 @@
 # Description
-## Given a string s, return the longest palindromicsubstring in s.
+## You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]). Find two lines that together with the x-axis form a container, such that the container contains the most water. Return the maximum amount of water a container can store.
 ---
-## Coding Pattern(s): DP or Expand Around Center
+## Coding Pattern(s): Sliding Window
 ## Solution Write Up:
-### The idea is to treat each character as the center of the palindrome. Continously expand and compare the characters on either side of the center. Keep track of maximum palindrome length. Have cases for even and odd palindromes.
+### The idea is to close inwards using the sliding window pattern. We only try to see if the area of the container is greater when one of the heights is greater than the max height encountered so far. We increment which ever height at the pointers is left. i.e left is less than right than move left forward else move right backward.
 ---
 ## Solution DP:
-### Time Complexity: O(N<sup>2</sup>)
+### Time Complexity: O(N)
 
 ```python
 class Solution:
